@@ -11,12 +11,12 @@ app = Flask(__name__)
 # "mysql+pymysql://[ユーザー名]:[パスワード]@[ホスト名]/[データベース名]"
 #
 # [ユーザー名]: MySQLに設定したユーザー名 (例: 'root')
-# [パスワード]: MySQLに設定したパスワード (例: 'password')
+# [パスワード]: MySQLに設定したパスワード (例: 'root')
 # [ホスト名]: あなたのPC (例: 'localhost' または '127.0.0.1')
 # [データベース名]: さっき作ったDB名 ( 'scriptshot_db' )
 #
 # ★★★↓自分の環境に合わせて必ず書き換えてください↓★★★
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password@localhost/scriptshot_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost/scriptshot_db'
 # ★★★↑自分の環境に合わせて必ず書き換えてください↑★★★
 
 # データベースとアプリを連携させる
